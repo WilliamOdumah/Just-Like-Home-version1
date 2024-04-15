@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.earth {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+.main-link {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+/* Styles for screens with a maximum width of 600px */
+    .main-item {
+        width: 60%; /* Set the width to 100% of the container */
+    }
+    .main-item:hover {
+        width: 80%;
+        transition: all 0.35s;
+    }
+
+    .main-item:hover:after {
+        width: 60%;
+        transition: all 0.35s;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+/* Styles for screens with a minimum width of 601px and maximum width of 900px */
+    .main-item {
+        width: 50%; /* Set the width to 50% of the container */
+    }
+    .main-item:hover {
+        width: 80%;
+        transition: all 0.35s;
+    }
+
+    .main-item:hover:after {
+        width: 50%;
+        transition: all 0.35s;
+    }
+}
+
+@media (min-width: 901px) {
+/* Styles for screens with a minimum width of 901px */
+    .main-item {
+        width: 33.33%; /* Set the width to 33.33% of the container */
+    }
+    .main-item:hover {
+        width: 45%;
+        transition: all 0.35s;
+    }
+
+    .main-item:hover:after {
+        width: 33.33%;
+        transition: all 0.35s;
+    }
+}
+
+
+.main-text {
+    font-size:  3rem;
+    color:white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title-text {
+    margin-top: 0;
+    font-size:  4rem;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    text-align: center;
+    color: black;
+}
