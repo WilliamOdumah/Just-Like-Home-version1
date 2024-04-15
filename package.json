@@ -2,5 +2,10 @@
   "devDependencies": {
     "css-loader": "^6.9.1",
     "style-loader": "^3.3.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0"
   }
 }

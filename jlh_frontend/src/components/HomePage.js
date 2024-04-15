@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link, Redirect} from "react-rou
 import SignInPage from "./SignInPage";
 import SignUpPage from "./SignUpPage";
 import ServicesPage from "./ServicesPage"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default class HomePage extends Component{
     constructor(props) {
@@ -26,7 +28,9 @@ export default class HomePage extends Component{
                         </div>
                         <div class="navbar__search">
                             <input class="searchbar" type="search" placeholder="Search"/>
-                            <button class="search-btn">Search</button>
+                            <button class="search-btn">
+                                <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+                            </button>
                         </div>
                         <div class="links__container">
                             <ul class="navbar__menu">
@@ -34,10 +38,10 @@ export default class HomePage extends Component{
                                     <a href="/" class="navbar__links">Home</a>
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="/services" class="navbar__links">Services Near You</a>
+                                    <a href="/services" class="navbar__links">Find Services</a>
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="/" class="navbar__links">Products Near You</a>
+                                    <a href="/" class="navbar__links">Find Products</a>
                                 </li>
                                 <li class="navbar__btn">
                                     <a href="/signin" target="_blank" class="button">Login</a>

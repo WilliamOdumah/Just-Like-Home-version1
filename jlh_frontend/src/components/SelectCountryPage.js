@@ -21,10 +21,10 @@ export default class SelectCountryPage extends Component{
                                 <a href="/" class="navbar__links">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="/services' %}" class="navbar__links">Services near you</a>
+                                <a href="/services' %}" class="navbar__links">Find Services</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="/" class="navbar__links">Products near you</a>
+                                <a href="/" class="navbar__links">Find Products</a>
                             </li>
                             <li class="navbar__btn"><a href="/signin" target="_blank"
                             class="button">Login</a>
@@ -41,7 +41,7 @@ export default class SelectCountryPage extends Component{
                     </div>
                         
                     <div class="title">
-                        <p class="title-text">
+                        <p>
                             JUST LIKE HOME
                         </p>
                     </div>
